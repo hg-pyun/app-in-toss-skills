@@ -1,0 +1,19 @@
+{
+  "name": "apps-in-toss-skills",
+  "owner": {
+    "name": "Apps In Toss"
+  },
+  "metadata": {
+    "description": "Claude Code skills for developing Apps In Toss (앱인토스) mini-apps.",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "scaffolding",
+      "source": "./scaffolding",
+      "description": "Scaffold new Apps In Toss mini-app projects (WebView via create-ait-app, React Native via create granite-app).",
+      "keywords": ["apps-in-toss", "앱인토스", "scaffolding", "create-ait-app", "granite"],
+      "category": "scaffolding"
+    }
+  ]
+}

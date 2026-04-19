@@ -1,0 +1,10 @@
+{
+  "name": "scaffolding",
+  "description": "Scaffold new Apps In Toss (앱인토스) mini-app projects. Provides /scaffolding:create-mini-app for WebView (create-ait-app) and React Native (create granite-app).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Apps In Toss"
+  },
+  "homepage": "https://developers-apps-in-toss.toss.im",
+  "keywords": ["apps-in-toss", "앱인토스", "scaffolding", "granite", "create-ait-app"]
+}

@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Claude Code plugin cache (when testing with --plugin-dir)
+.claude/plugins/cache/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs / scratch
+*.log
+tmp/
