@@ -1,7 +1,7 @@
 # Apps In Toss Skills
 
 Claude Code plugin marketplace for developing [Apps In Toss (앱인토스)](https://developers-apps-in-toss.toss.im) mini-apps.
-Each plugin bundles skills that map to a slice of the mini-app lifecycle — scaffolding, knowledge lookup, sandbox testing, deployment, and so on.
+Each plugin bundles skills that map to a slice of the mini-app lifecycle — project setup, knowledge lookup, sandbox testing, ongoing operations, and so on.
 
 ## Install
 
@@ -10,22 +10,22 @@ Each plugin bundles skills that map to a slice of the mini-app lifecycle — sca
 /plugin marketplace add toss/apps-in-toss-skills
 
 # Install a specific plugin (see the index below)
-/plugin install scaffolding@apps-in-toss-skills
+/plugin install project-setup@apps-in-toss-skills
 ```
 
 To iterate locally without publishing:
 
 ```sh
-claude --plugin-dir ./plugins/scaffolding
+claude --plugin-dir ./plugins/project-setup
 ```
 
 ## Plugins
 
 | Plugin | Skills | Status |
 | --- | --- | --- |
-| [`scaffolding`](./plugins/scaffolding) | `/scaffolding:create-mini-app` | ✅ shipped |
+| [`project-setup`](./plugins/project-setup) | `/project-setup:create-mini-app`, `/project-setup:add-deploy-action` | ✅ shipped |
 
-New plugin categories land here as the marketplace grows (e.g. `knowledge-skills`, `testing`, `deploy`).
+New plugin categories land here as the marketplace grows (e.g. `knowledge-skills`, `testing`, `operations`).
 
 ## Repository layout
 
@@ -50,7 +50,7 @@ apps-in-toss-skills/
 ## Adding a new skill
 
 1. **Pick a plugin.** Skills go inside the plugin whose scope matches the task.
-   - Scaffolding / project setup / adding features → [`plugins/scaffolding`](./plugins/scaffolding).
+   - One-time project setup (scaffolding, CI wiring, retrofit features) → [`plugins/project-setup`](./plugins/project-setup).
    - Docs / API lookups → `plugins/knowledge-skills` (create if missing).
    - Anything new → propose a new plugin (see below).
 2. **Create the skill directory** `plugins/<plugin>/skills/<skill-name>/` with a `SKILL.md`.
@@ -65,7 +65,7 @@ apps-in-toss-skills/
 3. Add `plugins/<plugin>/README.md` documenting the plugin's scope.
 4. Ship at least one skill before linking the plugin in the root table.
 
-Plugin names should be kebab-case and describe a *domain* ("scaffolding", "deploy") rather than a single action ("create-app"). Skills inside a plugin handle individual actions.
+Plugin names should be kebab-case and describe a *domain* ("project-setup", "knowledge-skills") rather than a single action ("create-app"). Skills inside a plugin handle individual actions.
 
 ## Validation
 

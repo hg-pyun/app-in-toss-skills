@@ -1,0 +1,10 @@
+{
+  "name": "project-setup",
+  "description": "One-time setup tasks for an Apps In Toss (앱인토스) mini-app project — scaffolding a new app, wiring config, adding CI/CD workflows.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Apps In Toss"
+  },
+  "homepage": "https://developers-apps-in-toss.toss.im",
+  "keywords": ["apps-in-toss", "앱인토스", "project-setup", "scaffolding", "ci", "granite", "create-ait-app"]
+}

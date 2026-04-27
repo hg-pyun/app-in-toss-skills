@@ -9,11 +9,11 @@
   },
   "plugins": [
     {
-      "name": "scaffolding",
-      "source": "./scaffolding",
-      "description": "Scaffold new Apps In Toss mini-app projects (WebView via create-ait-app, React Native via create granite-app).",
-      "keywords": ["apps-in-toss", "앱인토스", "scaffolding", "create-ait-app", "granite"],
-      "category": "scaffolding"
+      "name": "project-setup",
+      "source": "./project-setup",
+      "description": "One-time setup for an Apps In Toss mini-app project — scaffold a new app, wire local dev config, add CI/CD workflows.",
+      "keywords": ["apps-in-toss", "앱인토스", "project-setup", "scaffolding", "ci", "create-ait-app", "granite"],
+      "category": "project-setup"
     }
   ]
 }
